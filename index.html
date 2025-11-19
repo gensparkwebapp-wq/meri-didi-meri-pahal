@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meri Didi - Meri Pehal</title>
+    
+    <!-- PWA Configuration -->
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="theme-color" content="#FF6B35" />
+    <meta name="description" content="Empowering rural women through self-employment. Join Desi Didi Mart." />
+    <link rel="apple-touch-icon" href="https://ui-avatars.com/api/?name=MP&background=FF6B35&color=fff&size=192&rounded=true&bold=true" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              saffron: {
+                DEFAULT: '#FF6B35',
+                50: '#FFF0EB',
+                100: '#FFE1D6',
+                600: '#E85A2A',
+              },
+              earth: {
+                DEFAULT: '#8B4513',
+                50: '#F4EBE6',
+                800: '#5D2E0D',
+              },
+              forest: {
+                DEFAULT: '#228B22',
+                50: '#E9F4E9',
+                600: '#1B6F1B',
+              },
+              cream: {
+                DEFAULT: '#FFF8DC',
+                50: '#FFFEF7',
+                100: '#FFFDF0',
+              }
+            },
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              heading: ['Poppins', 'sans-serif'],
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      /* Custom Scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #FFF8DC;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #FF6B35;
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #8B4513;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.554.0",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-router-dom": "https://aistudiocdn.com/react-router-dom@^7.9.6",
+    "framer-motion": "https://aistudiocdn.com/framer-motion@^12.23.24",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0"
+  }
+}
+</script>
+</head>
+  <body class="bg-cream-50 text-gray-800 font-sans antialiased">
+    <div id="root"></div>
+  </body>
+</html>
