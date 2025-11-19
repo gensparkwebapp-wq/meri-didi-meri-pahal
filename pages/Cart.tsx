@@ -1,11 +1,13 @@
+
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { Trash2, Plus, Minus, ArrowLeft, ShoppingBag } from 'lucide-react';
 import Button from '../components/ui/Button';
 import { useCart } from '../context/CartContext';
 
 const Cart: React.FC = () => {
   const { cart, updateQuantity, removeFromCart, cartTotal, clearCart } = useCart();
+  const navigate = useNavigate();
 
   if (cart.length === 0) {
     return (
@@ -113,7 +115,12 @@ const Cart: React.FC = () => {
                 </div>
               </div>
 
-              <Button variant="primary" size="lg" className="w-full mb-3">
+              <Button 
+                variant="primary" 
+                size="lg" 
+                className="w-full mb-3"
+                onClick={() => navigate('/checkout')}
+              >
                 Proceed to Checkout
               </Button>
               <Link to="/shop">

@@ -1,3 +1,4 @@
+
 import React, { useEffect } from 'react';
 import { HashRouter, Routes, Route } from 'react-router-dom';
 import { AuthProvider } from './context/AuthContext';
@@ -15,6 +16,7 @@ import Register from './pages/Register';
 import Profile from './pages/Profile';
 import Wishlist from './pages/Wishlist';
 import Cart from './pages/Cart';
+import Checkout from './pages/Checkout';
 import Franchise from './pages/Franchise';
 import SellerDashboard from './pages/SellerDashboard';
 import AdminDashboard from './pages/AdminDashboard';
@@ -65,6 +67,7 @@ const App: React.FC = () => {
                 <Route path="profile" element={<Profile />} />
                 <Route path="wishlist" element={<Wishlist />} />
                 <Route path="cart" element={<Cart />} />
+                <Route path="checkout" element={<Checkout />} />
                 <Route path="seller-dashboard" element={<SellerDashboard />} />
                 <Route path="admin-dashboard" element={<AdminDashboard />} />
                 <Route path="admin" element={<AdminLogin />} />
